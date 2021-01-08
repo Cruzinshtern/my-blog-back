@@ -5,6 +5,6 @@
   "username": "cruzinshtern",
   "password": "user",
   "database": "blog",
-  "entities": [],
+  "entities": ["dist/**/*.entity{.ts,.js}"],
   "synchronize": true
 }
