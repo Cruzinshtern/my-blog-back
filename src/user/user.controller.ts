@@ -77,11 +77,11 @@ export class UserController {
       return this.userService.paginate({
         page,
         limit,
-        route: 'http://localhost:3000/users/',
+        route: 'http://localhost:3000/api/users/',
       });
     } else {
       return this.userService.paginateFIlterByUsername(
-        { page, limit, route: 'http://localhost:3000/users/' },
+        { page, limit, route: 'http://localhost:3000/api/users/' },
         { username },
       )
     }
