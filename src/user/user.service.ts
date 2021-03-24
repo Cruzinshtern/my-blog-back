@@ -43,7 +43,6 @@ export class UserService {
       { relations: ['blogEntries'] }
       )).pipe(
       map((user: User) => {
-        // console.log(user)
         const { password, ...result } = user;
         return result;
       }),
